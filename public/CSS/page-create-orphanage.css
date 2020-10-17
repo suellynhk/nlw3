@@ -1,0 +1,24 @@
+#page-create-orphanage {
+    min-width: 100vw;
+    display: flex;
+}
+
+main {
+    flex: 1;
+}
+
+.map-container {
+    margin: 0 0 4rem;
+}
+
+/*tira o arredondamento da parte de baixo border-radius: cima.esq, cima.dir, baixo.dir, baixo.esq */
+.map-container .leaflet-container {
+    border-radius: 20px 20px 0 0;
+}
+
+/*tira o arredondamento da parte de cima border-radius: cima.esq, cima.dir, baixo.dir, baixo.esq */
+.map-container footer {
+    background: #F5F8FA;
+    border-radius: 0 0 20px 20px;
+
+}

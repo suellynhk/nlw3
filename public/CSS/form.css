@@ -1,0 +1,162 @@
+form {
+    width: 70rem;
+    margin: 6.4rem auto;
+    background: white;
+    border: 1px solid #D3E2E5;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding: 8rem;
+}
+
+fieldset {
+    border: 0;
+}
+
+/* o uso do + pega o irmão, ou seja, o segundo elemento igual a ele*/
+fieldset + fieldset {
+    margin-top: 8rem;
+}
+
+fieldset legend {
+    width: 100%;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: #5C8599;
+    font-weight: 700;
+    border-bottom: 1px solid #D3E2E5;
+    margin-bottom: 4rem;
+    padding: 2.4rem;
+}
+
+.input-block + .input-block {
+    margin-top:  2.4rem;
+}
+
+.input-block label {
+    color: #8FA7B3;
+    margin-bottom: .8rem;
+    line-height: 1.5;
+}
+
+
+.input-block span {
+    color: #8FA7B3;
+    margin-left: 2.4rem;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+
+
+.input-block input,
+.input-block textarea {
+    width: 100%;
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    border-radius: 2rem;
+    color: #5C8599;
+    margin-bottom: .8rem;
+    line-height: 1.5;
+    outline: none;
+    padding: 0 1rem;
+}
+
+.input-block input:focus,
+.input-block textarea:focus {
+	border: 1.2px solid  #15C3D6;
+}
+
+
+.input-block input {
+    height: 6.4rem;
+}
+
+.input-block textarea {
+    height: clamp(12rem, 16rem, 24rem);
+    resize: vertical;
+}
+
+.input-block.images button {
+    width: 100%;
+    border: 1px dashed #96D2F0;
+    background: #F5F8FA;
+    height: 6.4rem;
+    padding: 0 1rem;
+    margin-top: 2.4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+/*quando houver um elemento seguido de outro igual, vai aplicar ao Segundo*/
+.new-upload + .new-upload {
+    margin-top: 2.4rem;
+}
+
+.new-upload {
+    position: relative;
+
+}
+/*position:absolute fica absoluto em relação ao elemento pai com position:relative*/
+.new-upload span {
+    position: absolute;
+    right: 12px;
+    bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid #D3E2E5;
+    display: flex;
+    border-radius: 10px;
+    padding: .6rem;
+    cursor: pointer;
+}
+
+
+
+.primary-button {
+    margin-top: 6.4rem;
+    width: 100%;
+    height: 6.4rem;
+    border: 0;
+    cursor: pointer;
+    background: #3CDC8C;
+    border-radius: 2rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.2s;
+}
+
+.primary-button:hover {
+    background: #36CF82;
+}
+
+.button-select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.button-select button {
+    height: 6.4rem;
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    color: #5C8599;
+    cursor: pointer;
+    outline: none;
+}
+
+/* forma de pegar somente o primeiro de vários buttons */
+.button-select button:first-child {
+    border-radius: 2rem 0 0 2rem;
+}
+/* forma de pegar somente o último de vários buttons */
+.button-select button:last-child {
+    border-radius: 0 2rem 2rem 0;
+}
+
+.button-select button.active {
+    background: #EDFFF6;
+    border: 2px solid #A1E9C5;
+    color: #37C77F;
+}
+
